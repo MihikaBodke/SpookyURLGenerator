@@ -1,0 +1,216 @@
+{% load static	 %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>About us</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="js/rollover.js" type="text/javascript"></script>
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/ie_png.js"></script>
+	<script type="text/javascript">
+		 ie_png.fix('.png, .box .top, .box .bottom, .box .inner');
+	</script>
+<![endif]-->
+
+<style>
+
+
+
+	.extra-wrap {zoom:1;}
+	.box .top {
+		margin-bottom:-1px;
+	}
+	
+	
+	
+		* {margin:0;padding:0}
+	html, body {height:100%}
+	body {background:#000;font-family:Tahoma, Geneva, sans-serif;font-size:100%;line-height:.9375em;color:#fff}
+	img {border:0;vertical-align:top;text-align:left}
+	object {vertical-align:top;outline:none}
+	ul, ol {list-style:none}
+	.fleft {float:left}
+	.fright {float:right}
+	.clear {clear:both}
+	.col-1, .col-2, .col-3 {float:left}
+	.alignright {text-align:right}
+	.aligncenter {text-align:center}
+	.wrapper {width:100%;overflow:hidden}
+	.container {width:100%}
+	/* GLOBAL */
+	#main {width:1000px;margin:0 auto;font-size:.75em}
+	#header {height:285px;background:url("{% static 'images/header-bg.jpg' %}") no-repeat left top}
+	#content {position:relative}
+	#footer {height:300px;background:url("{% static 'images/footer-bg.jpg' %}") no-repeat left top}
+	/* forms parameters */
+	input, select, textarea {font-family:Tahoma, Geneva, sans-serif;font-size:1em;vertical-align:middle;font-weight:normal}
+	/* other */
+	.img-indent {margin:0 20px 0 0;float:left}
+	.img-box {width:100%;overflow:hidden;padding-bottom:15px}
+	.img-box img {float:left;margin:0 20px 0 0}
+	.extra-wrap {overflow:hidden}
+	p {margin-bottom:15px}
+	.p1 {margin-bottom:8px}
+	.p2 {margin-bottom:16px}
+	.p3 {margin-bottom:24px}
+	/* txt, links, lines, titles */
+	a {color:#bde0ff;outline:none}
+	a:hover {text-decoration:none}
+	h2, h3 {font-family:Georgia, "Times New Roman", Times, serif;color:#bde0ff;font-weight:normal;line-height:1.2em;margin-bottom:16px}
+	h2 {font-size:2em}
+	h3 {font-size:1.67em}
+	h4 {font-size:1em;margin-bottom:3px}
+	h4 a {color:#fff;text-decoration:none}
+	h4 a:hover {text-decoration:underline}
+	.link1 {color:#fff}
+	.link2 {color:#bc191a}
+	/* boxes */
+	.content-box {background:url("{% static 'images/content-bg1.jpg' %}") left top repeat-y;width:100%}
+	.content-box .top {background:url("{% static 'images/content-top.jpg'%}") no-repeat left top}
+	.content-box .bottom {background:url("{% static 'images/content-bottom.jpg'%}") no-repeat left bottom;width:100%}
+	.content-box .inside {padding:1px 269px 0 48px}
+	.box {width:100%}
+	.box .top {background:url("{% static 'images/box-top.png'%}") no-repeat left bottom;height:16px !important;overflow:hidden;font-size:0;line-height:0}
+	.box .bottom {background:url("{% static 'images/box-bot.png' %}") no-repeat left top;height:16px;overflow:hidden;font-size:0;line-height:0}
+	.box .inner {background:url("{% static 'images/box-bg.png' %}") left top;padding:8px 42px 10px 40px}
+	.box .inner_copy {border:0;color:#fff;float:right;width:0.09%!important;margin:-100px;overflow:hidden;line-height:0px;padding:0px;font-size:11px}
+	/* header */
+	#header .row-1 {height:190px}
+	#header .row-1 .indent {padding:32px 0 0 32px}
+	#header .row-2 {}
+	.nav {padding:13px 0 0 26px}
+	.nav li {float:left;padding-right:46px}
+	.nav li.last {padding-right:0}
+	/* content */
+	#content .magic {position:absolute;right:31px;top:31px}
+	.img-list li {width:100%;overflow:hidden;padding-bottom:22px}
+	.img-list li.last {padding-bottom:0}
+	.img-list li img {float:left;margin-right:20px}
+	.img-list li img.png {margin-bottom:-6px}
+	.list1 {padding-bottom:18px}
+	.list1 li {background:url(images/arrow1.gif) no-repeat left 5px;padding:0 0 0 12px;position:relative}
+	.list1 li li {background:url("{% static 'images/arrow2.gif '%}") no-repeat left 6px}
+	/* footer */
+	#footer .indent {padding:27px 86px 0 86px}
+	#footer img {position:relative;top:-3px}
+	/* forms */
+	#contacts-form {clear:right;width:100%;overflow:hidden;padding-bottom:20px}
+	#contacts-form fieldset {border:none;float:left}
+	#contacts-form .field {clear:both}
+	#contacts-form label {float:left;width:97px;line-height:18px;padding-bottom:3px;font-weight:bold}
+	#contacts-form input {width:238px;padding:0 0 0 3px;background:url(images/form-bg.png) left top;border:1px solid #bde0ff;color:#fff;float:left}
+	#contacts-form textarea {width:495px;height:208px;padding:0 0 0 3px;background:url(images/form-bg.png) left top;border:1px solid #bde0ff;color:#fff;margin-bottom:18px;overflow:auto;float:left}
+	#content .inner_copy {border:0;color:#f00;float:left;width:50%!important;margin:-202px 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:12px}
+	/* The Modal (background) */
+	.modal {
+	margin-top: 100px;
+	margin-left: 300px;
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 60%; /* Full width */
+	  height: 150%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	
+	}
+	
+	/* Modal Content */
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	}
+	
+	/* The Close Button */
+	.close {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+	</style>
+
+</head>
+
+<body onload="MM_preloadImages('images/m1-act.jpg','images/m2-act.jpg','images/m3-act.jpg','images/m4-act.jpg','images/m5-act.jpg')">
+<div id="main">
+<!-- header -->
+	<div id="header">
+		<div class="row-1">
+			<div class="indent"><a href="home.html"><img alt="" src='{% static "images/logo.png" %}' height="150px;" width="350px;" /></a></div> 
+		</div>
+		<div class="row-2">
+			<ul class="nav">
+				<li><a href="{% url 'home' %}" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_1','','images/m1-act.jpg',1)"><img alt="" src='{% static "images/m1-act.jpg" %}' id="r_1" /></a>&nbsp; &nbsp;</li>
+				<li><a href="{% url 'about_us' %}" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_2','','images/m2-act.jpg',1)"><img alt="" src='{% static "images/m2.jpg" %}'  id="r_2" /></a>&nbsp;&nbsp;</li>
+				<li><a href="{% url 'article' %}" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_3','','images/m3-act.jpg',1)"><img alt="" src='{% static "images/m3.jpg"%}' id="r_3" /></a>&nbsp;&nbsp;</li>
+				<li><a href="{% url 'contact_us' %}" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_4','','images/m4-act.jpg',1)"><img alt="" src='{% static "images/m4.jpg" %}' id="r_4" /></a>&nbsp;&nbsp;</li>
+				<!----	<li class="last"><a href="site_map.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_5','','images/m5-act.jpg',1)"><img alt="" src="images/m5.jpg" id="r_5" /></a></li>-->
+			</ul>
+		</div>
+	</div>
+<!-- content -->
+	<div id="content">
+<!-- content-box begin -->
+		<div class="content-box">
+			<div class="top">
+				<div class="bottom">
+					<div class="inside">
+<!-- box begin -->
+						<div class="box">
+						<div class="top"></div>
+							<div class="inner">
+								
+								<p class="p3">This website has been created to give you your own customised URL. We provide URL shortening, a spooky url for fun or your very own custom url</p>
+								<h3>About Us</h3>
+								<ul class="img-list">
+									<li>
+										<img alt="" src="images/img2.png" />
+										<h4><a href="#">Jai Parmani</a></h4>
+										IQ higher than your standards
+									</li> <br> <br> <br>
+									<li>
+										<img alt="" src="images/img3.png" />
+										<h4><a href="#">Mihika Bodke</a></h4>
+										IQ higher than Jai's IQ
+									</li>
+									
+								</ul>
+							</div>
+							<div class="inner_copy">More <a href="http://www.templates.com/">Website Templates</a> @ Templates.com!</div>
+							<div class="bottom"></div>
+						</div>
+<!-- box end -->
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- content-box end -->
+<img alt="" src='{% static "images/magic.png" %}'  class="magic png" />
+	</div>
+<!-- footer -->
+	<div id="footer">
+		<div class="indent">
+			<div class="fleft">Copyright - Mihika Bodke,Jai Parmani</div>
+			<div class="fright"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
